@@ -1,0 +1,12 @@
+*~
+*.kilepr
+*.out
+*.bak
+*.aux
+*.log
+*.bbl
+*.blg
+*.backup
+*.nav
+*.synctex*
+

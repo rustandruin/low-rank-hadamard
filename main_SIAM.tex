@@ -1,0 +1,78 @@
+\documentclass[final]{siamltex}
+%\usepackage{palatino}
+
+
+\usepackage{amssymb,amsfonts,amsmath}
+\usepackage{graphicx,epsfig,color}
+\usepackage{graphics, graphicx}
+\usepackage{enumerate}
+\usepackage{subfigure}
+\usepackage{verbatim}
+%\usepackage{url}
+\usepackage{bm} % for bold greek symbols
+
+%usepackage{subfigure,enumerate,bm,amsmath,amsthm,wrapfig,array,color,algorithmi}
+
+\usepackage{framed}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+%\usepackage{algorithm2e,framed}
+\usepackage{amsfonts,amsmath}
+\usepackage{graphicx}
+\usepackage{subfigure,enumerate,wrapfig,array,color}
+\usepackage{graphics}
+\usepackage{multirow}
+
+\title{Improved matrix algorithms via the Subsampled Randomized Hadamard Transform}
+
+\author{
+Christos Boutsidis\thanks{Mathematical Sciences Department, IBM T. J. Watson Research Center. Email: \texttt{\{cboutsi\}@us.ibm.com}}
+\and
+Alex Gittens\thanks{Applied and Computational Mathematics Department,
+California Institute of Technology. Email: \texttt{\{gittens\}@caltech.edu}}
+}
+
+% The \author macro works with any number of authors. There are two commands
+% used to separate the names and addresses of multiple authors: \And and \AND.
+%
+% Using \And between authors leaves it to \LaTeX{} to determine where to break
+% the lines. Using \AND forces a linebreak at that point. So, if \LaTeX{}
+% puts 3 of 4 authors names on the first line, and the last on the second
+% line, try using \AND instead of \And before the third author name.
+
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+
+
+\input{newcmds}
+
+\def\eps{\epsilon}
+
+% Inner product
+\newcommand{\ip}[2]{\left\langle {#1},\ {#2} \right\rangle}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{keywords}
+low-rank approximation, least-squares regression, hadamard transform, sampling, randomized algorithms.
+\end{keywords}
+
+\begin{AMS}
+15B52, 15A18, 11K45
+% 15B52 - Random Matrices, 15A18 - SVD, eigenvaues etc, 11K45 - Monte-Carlo Methods
+\end{AMS}
+
+\pagestyle{myheadings}
+\thispagestyle{plain}
+\markboth{BOUTSIDIS AND GITTENS}{IMPROVED MATRIX ALGORITHMS VIA THE SRHT}
+
+\input{text}
+\input{BG12.bbl}
+
+%\bibliographystyle{siam}
+%\bibliography{BG12}
+
+\end{document}

@@ -1,0 +1,260 @@
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+%-----------------------------------------------------------------------
+%\newcommand{\hiddensubsection}[1]{
+%\stepcounter{subsection}
+%\subsection*{\arabic{section}.\arabic{subsection}\hspace{1em}{#1}}}
+
+%\newcommand{\hiddensection}[1]{
+%\stepcounter{section}
+%\section*{\arabic{section}.\arabic{section}\hspace{1em}{#1}}}
+
+\newcommand{\Probab}[1]{\mbox{}{\mathbb{P}}\left[#1\right]}
+\newcommand{\Exp}{\mbox{}{\bf{E}}}
+\newcommand{\Expect}[1]{\mbox{}{\mathbb{E}}\left[#1\right]}
+\newcommand{\Varnce}[1]{\mbox{}{\bf{Var}}\left[#1\right]}
+\newcommand{\Trace }[1]{\mbox{}{\mathrm{Tr}}\left(#1\right)}
+%\newcommand{\diag  }[1]{\mbox{}{\textrm{diag}}\left(#1\right)}
+\newcommand{\Sqrt  }[1]{\mbox{}\left(#1\right)^{1/2}}
+\newcommand{\Qdrt  }[1]{\mbox{}\left(#1\right)^{1/4}}
+\newcommand{\FNormB }[1]{\mbox{}\left\|#1\right\|_{\mathrm{F}}  }
+\newcommand{\FNormBS}[1]{\mbox{}\left\|#1\right\|_{\mathrm{F}}^2}
+\newcommand{\FNorm }[1]{\mbox{}\|#1\|_\mathrm{F}  }
+\newcommand{\FNormS}[1]{\mbox{}\|#1\|_\mathrm{F}^2}
+\newcommand{\FNormF}[1]{\mbox{}\|#1\|_\mathrm{F}^4}
+\newcommand{\FNormQ}[1]{\mbox{}\left\|#1\right\|_\mathrm{F}^4}
+\newcommand{\TNormB }[1]{\mbox{}\left\|#1\right\|_2  }
+\newcommand{\TNormBS}[1]{\mbox{}\left\|#1\right\|_2^2}
+\newcommand{\TNorm }[1]{\mbox{}\|#1\|_2  }
+\newcommand{\TNormS}[1]{\mbox{}\|#1\|_2^2}
+\newcommand{\TNormF}[1]{\mbox{}\|#1\|_2^4}
+\newcommand{\TNormQ}[1]{\mbox{}\left\|#1\right\|_2^4}
+\newcommand{\XNormB }[1]{\mbox{}\left\|#1\right\|_{\xi}  }
+\newcommand{\XNormBS}[1]{\mbox{}\left\|#1\right\|_{\xi}^2}
+\newcommand{\XNorm }[1]{\mbox{}\|#1\|_{\xi}  }
+\newcommand{\XNormS}[1]{\mbox{}\|#1\|_{\xi}^2}
+\newcommand{\PNorm }[1]{\mbox{}\|#1\|_{p}  }
+\newcommand{\PNormS}[1]{\mbox{}\|#1\|_{p}^2}
+\newcommand{\XNormQ}[1]{\mbox{}\left\|#1\right\|_{\xi}^4}
+\newcommand{\VTNorm }[1]{\mbox{}\left|#1\right|  }
+\newcommand{\VTNormS}[1]{\mbox{}\left|#1\right|^2}
+\newcommand{\VTNormQ}[1]{\mbox{}\left|#1\right|^4}
+\newcommand{\VTTNorm }[1]{\mbox{}\left|#1\right|_2  }
+\newcommand{\VTTNormS}[1]{\mbox{}\left|#1\right|_2^2}
+\newcommand{\VTTNormQ}[1]{\mbox{}\left|#1\right|_2^4}
+\newcommand{\MCNorm}[1]{\mbox{}\|#1\|_{1 \rightarrow 2}}
+\newcommand{\MCNormS}[1]{\mbox{}\|#1\|_{1 \rightarrow 2}^2}
+\newcommand{\INorm}[1]{\mbox{}\|#1\|_\infty}
+
+%\newtheorem{theorem}{\bf Theorem}[]
+%\newtheorem{lemma}[theorem]{Lemma}
+%\newtheorem{definition}[theorem]{Definition}
+%\newtheorem{proposition}[theorem]{Proposition}
+%\newtheorem{corollary}[theorem]{Corollary}
+%\newtheorem{axiom}[theorem]{Axiom}
+
+\newcommand{\qedsymb}{\hfill{\rule{2mm}{2mm}}}
+
+\newcommand{\transp}{^{\textsc{T}}}
+\newcommand{\trace}{\text{\rm Tr}}
+\newcommand{\mat}[1]{{\ensuremath{\bm{\mathrm{#1}}}}}
+\newcommand{\dvc}{\ensuremath{d_{\small \sf VC}}}
+\newcommand{\abs }[1]{\left|#1\right|}
+\newcommand{\EE}[1]{\ensuremath{\mathbb{E}\left[#1\right] } }
+\newcommand{\condE}[2]{\ensuremath{\mathbf{E}_{#1}\left[{#2}\right] } }
+\newcommand{\var}[1]{\text{Var}\ensuremath{\left[#1\right] } }
+\newcommand{\lambdamax}[1]{\ensuremath{\lambda_{\mathrm{max}}\left(#1\right)}}
+\renewcommand{\vec}[1]{\ensuremath{\bm{#1}}}
+
+
+\renewcommand{\const}[1]{\ensuremath{\mathrm{#1}}}
+% Pseudo-inverse of a matrix
+\newcommand{\pinv}[1]{ {#1}^\dagger}
+
+\def\gammab{{\bm{\gamma}}}
+\def\kappab{{\bm{\kappa}}}
+\def\sig{{\bm{\Sigma}}}
+\def\sigplus{{\bm{\Sigma}^{+}}}
+\def\siginv{{\bm{\Sigma}^{-1}}}
+\def\bet{{\bm{\beta}}}
+\def\one{{\bm{1}}}
+\def\exp{\hbox{\rm exp}}
+\def\rank{\hbox{\rm rank}}
+\newcommand{\stablerank}[1]{\operatorname{sr}\left(#1\right)}
+
+\def\cond{\hbox{\rm \bf{k}}}
+
+\def\col{\hbox{\rm col}}
+\def\ker{\hbox{\rm ker}}
+\def\ahat{{\hat\a}}
+\def\b{{\mathbf b}}
+\def\e{{\mathbf e}}
+\def\expe{{\mathrm e}}
+\def\q{{\mathbf q}}
+\def\rb{{\mathbf r}}
+\def\s{{\mathbf s}}
+\def\u{{\mathbf u}}
+\def\v{{\mathbf v}}
+\def\d{{\mathbf \delta}}
+\def\xhat{{\hat\x}}
+\def\yhat{{\hat\y}}
+\def\A{\matA}
+\def\B{\matB}
+\def\C{\matC}
+\def\Ahat{\hat\matA}
+\def\Atilde{\tilde\matA}
+\def\Btilde{\tilde\matB}
+\def\Stilde{\tilde\matS}
+\def\Utilde{\tilde\matU}
+\def\Vtilde{\tilde\matV}
+\def\E{{\cl E}}
+\def\G{{\cl G}}
+\def\hset{{\cl H}}
+\def\Q{{\bm{Q}}}
+\def\U{{\bm{U}}}
+\def\V{{\bm{V}}}
+\def\win{\hat{\w}}
+\def\wopt{\w^*}
+\def\matAhat{\hat\mat{A}}
+\def\matA{\mat{A}}
+\def\matB{\mat{B}}
+\def\matC{\mat{C}}
+\def\matD{\mat{D}}
+\def\matE{\mat{E}}
+\def\matG{\mat{G}}
+\def\matH{\mat{H}}
+\def\matI{\mat{I}}
+\def\matM{\mat{M}}
+\def\matP{\mat{P}}
+\def\matQ{\mat{Q}}
+\def\matR{\mat{R}}
+\def\matS{\mat{S}}
+\def\matT{\mat{T}}
+\def\matU{\mat{U}}
+\def\matV{\mat{V}}
+\def\matW{\mat{W}}
+\def\matX{\mat{X}}
+\def\matY{\mat{Y}}
+\def\matZ{\mat{Z}}
+\def\matSig{\mat{\Sigma}}
+\def\matTh{\mat{\Theta}}
+\def\matOmega{\mat{\Omega}}
+\def\matPsi{\mat{\Psi}}
+\def\matGam{\mat{\Gamma}}
+\def\w{{\mathbf{w}}}
+\def\ein{{\cl E_{\text{\rm in}}}}
+\def\eout{{\cl E}}
+\def\scl{{\textsc{l}}}
+\def\scu{{\textsc{u}}}
+\def\phiu{{\overline{\phi}}}
+\def\psiu{{\overline{\psi}}}
+\def\phil{{\underbar{\math{\phi}}}}
+\DeclareMathSymbol{\Prob}{\mathbin}{AMSb}{"50}
+%\DeclareMathSymbol{\Exp}{\mathbin}{AMSb}{"45}
+\newcommand\remove[1]{}
+
+\def\nnz{{ \rm nnz }}
+
+\def\mvec#1#2{[#1_1,\ldots ,#1_#2]}
+\def\msum#1#2#3{$$\sm_{#1=#2}^#3$$}
+\def\mint#1#2{$$\int_#1^#2$$}
+\def\math#1{$#1$}
+\def\mathd#1{$$#1\eqa$$}
+\def\mand#1{$$#1$$}
+%\def\v#1{{\mathbf #1}}
+\def\frac#1#2{{#1\over #2}}
+\def\ital#1{{\it #1}}
+\def\mld#1{\begin{equation}
+#1
+\end{equation}}
+\def\eqar#1{\begin{eqnarray}
+#1
+\end{eqnarray}}
+\def\eqan#1{\begin{eqnarray*}
+#1
+\end{eqnarray*}}
+
+%\DeclareSymbolFont{AMSb}{U}{msb}{m}{n}
+%\DeclareMathSymbol{\N}{\mathbin}{AMSb}{"4E}
+%\DeclareMathSymbol{\Z}{\mathbin}{AMSb}{"5A}
+\DeclareMathSymbol{\R}{\mathbin}{AMSb}{"52}
+%\DeclareMathSymbol{\Q}{\mathbin}{AMSb}{"51}
+%\DeclareMathSymbol{\I}{\mathbin}{AMSb}{"49}
+%\ DeclareMathSymbol{\C}{\mathbin}{AMSb}{"43}
+
+%\def\R{{\mathbf R\hspace*{-1.65ex}\rule{0.08ex}{1.35ex}\hspace*{1.65ex}}}
+\def\Nat{{\mathbf N\hspace*{-1.89ex}\rule{0.07ex}{1.5ex}\hspace*{1.89ex}\hspace*{-1.7ex}\rule{0.1ex}{1.5ex}\hspace*{1.7ex}\hspace*{-.6ex}\rule{0.1ex}{1.5ex}\hspace*{.6ex}}}
+%\def\Q{{\mathbf Q\hspace*{-1.35ex}\raise.15ex\hbox{\rule{0.095ex}{1.35ex}}\hspace*{1.4ex}}}
+%\def\C{{\mathbf C\hspace*{-1.25ex}\raise.15ex\hbox{\rule{0.095ex}{1.35ex}}\hspace*{1.25ex}}}
+\def\qed{\hfill\rule{2mm}{2mm}}
+\def\sm{\sum\limits}
+\def\choose#1#2{\left({{#1}\atop{#2}}\right)}
+\def\cl#1{{\cal #1}}
+\def\prob#1{{P\left[{#1}\right]}}
+%\def\implies{\Rightarrow}
+\def\mathbox#1{{\fbox{\math{#1}}}}
+\def\mandbox#1{{\fbox{\math{\displaystyle #1}}}}
+\newcommand{\argmin}{\operatorname*{argmin}}
+%\def\argmin{\mathop{\hbox{argmin}}\limits}
+\def\argmax{\mathop{\hbox{argmax}}\limits}
+
+\def\mbf#1{{\mbox{\boldmath{$#1$}}}}
+\def\h{{\mathbf h}}
+\def\m{{\mathbf m}}
+\def\x{{\mathbf x}}
+\def\y{{\mathbf y}}
+\def\z{{\mathbf z}}
+\def\X{{\mathbf X}}
+\def\Y{{\mathbf Y}}
+%\def\Z{{\mathbf Z}}
+\def\a{{\mathbf a}}
+\def\b{{\mathbf b}}
+\def\exp#1{{\left\langle#1\right\rangle}}
+\def\E#1{{{\mathbf E}\left[#1\right]}}
+%\def\mod#1{{\left|#1\right|}}
+\def\norm#1{{\|#1\|}}
+\def\floor#1{{\left\lfloor\,#1\,\right\rfloor}}
+\def\ceil#1{{\left\lceil\,#1\,\right\rceil}}
+\def\r#1{{(\ref{#1})}}
+\def\rot#1{{\rotatebox{90}{#1\ }}}
+
+\newcommand{\stitle}[1]{\begin{center}{\bf\color[named]{Red}#1}\\[-.8em]\rule{\linewidth}{1pt}\end{center}}
+\newcommand{\myv}[1]{{ \bf #1} }
+\newcommand{\mym}[1]{{ \bf #1} }
+\newcommand{\red}[1]{{\color[named]{Red} #1}}
+\newcommand{\blue}[1]{{\color[named]{Blue} #1}}
+\newcommand{\green}[1]{{\color[named]{Green} #1}}
+\newcommand{\light}[1]{{\color[rgb]{0.7,0.7,0.7} #1}}
+\newcommand{\dark}[1]{{\color[rgb]{0,0,0} #1}}
+
+
+\def\qn#1{{{#1}?\hfill\bf\math{\bigcirc} 1\qquad\math{\bigcirc} 2\qquad\math{\bigcirc} 3\qquad\math{\bigcirc} 4\qquad\math{\bigcirc} 5}}
+
+\def\dotfil{\leaders\hbox to 1.5mm{.}\hfill}
+%\newcounter{rmnum}
+%\def\RN#1{\count0=#1\uppercase\expandafter{\romannumeral\count0}}
+\def\RN#1{\setcounter{rmnum}{#1}\uppercase\expandafter{\romannumeral\value{rmnum}}}
+\def\rn#1{\setcounter{rmnum}{#1}\expandafter{\romannumeral\value{rmnum}}}
+\def\lequal{{\buildrel{\scriptscriptstyle <}\over{\scriptscriptstyle =}}}
+\def\gequal{\ {\buildrel{\scriptstyle >}\over{\scriptstyle =}}\ }
+\def\econd#1#2{\ {\buildrel{\scriptstyle #1}\over{\scriptstyle #2}}\ }
+
+\def\smileyface{{
+\begin{picture}(13,13)
+\allinethickness{1.5pt}
+\put(6.5,3.5){\circle{13}}
+\put(3.9,5.5){\circle*{1.25}}
+\put(8.7,5.5){\circle*{1.25}}
+\put(1.7,0){\spline(2,2.5)(4.7,0)(7,2.5)}
+\end{picture}
+}}
+\def\sadface{{
+\begin{picture}(13,13)
+\allinethickness{1.5pt}
+\put(6.5,3.5){\circle{13}}
+\put(3.9,5.5){\circle*{1.25}}
+\put(8.7,5.5){\circle*{1.25}}
+\put(1.7,0.5){\spline(2.5,0)(5,2.5)(7.5,0)}
+\end{picture}
+}}
